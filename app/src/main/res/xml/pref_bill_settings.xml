@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_default_hide_bills_on_hold_from_main_bills"
+        android:key="@string/pref_hide_bills_on_hold_from_main_bills_key"
+        android:summaryOff="No"
+        android:summaryOn="Yes"
+        android:title="Hide bills on hold from my bills:" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_notify_prior_bill_due_date_24h"
+        android:entries="@array/pref_notify_prior_bill_due_date_option_labels"
+        android:entryValues="@array/pref_notify_prior_bill_due_date_option_values"
+        android:key="@string/pref_notify_prior_bill_due_date_key"
+        android:title="Notify me for recurring bills:" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_sort_recurring_bills_by_due_date"
+        android:entries="@array/pref_sort_recurring_bills_by_option_labels"
+        android:entryValues="@array/pref_sort_recurring_bills_by_options_values"
+        android:key="@string/pref_sort_recurring_bills_by_key"
+        android:title="Sort my recurring bills by:" />
+
+</androidx.preference.PreferenceScreen>

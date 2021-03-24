@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ViewBillsActivity">
+    <item
+        android:id="@+id/action_mark_as_paid_bills"
+        android:icon="@drawable/baseline_check_circle_white_36dp"
+        android:title="@string/bills_paid_menu_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_mark_as_bills_on_hold"
+        android:icon="@drawable/baseline_pending_actions_white_36dp"
+        android:title="@string/bills_on_hold_menu_text"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_add_new_bill"
+        android:orderInCategory="100"
+        android:title="@string/add_a_new_bill_menu_text"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/feedback"
+        android:orderInCategory="100"
+        android:title="@string/feedback_menu_text"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/report_issue"
+        android:orderInCategory="100"
+        android:title="@string/report_an_issue_menu_text"
+        app:showAsAction="never" />
+</menu>

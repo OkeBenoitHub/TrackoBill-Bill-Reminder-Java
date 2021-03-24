@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Label ordering must match values -->
+    <array name="pref_notify_prior_bill_due_date_option_labels">
+        <item>24 hours before</item>
+        <item>2 days before</item>
+        <item>1 week before</item>
+    </array>
+
+    <array name="pref_notify_prior_bill_due_date_option_values">
+        <item>24h</item>
+        <item>48h</item>
+        <item>168h</item>
+    </array>
+
+    <array name="pref_sort_recurring_bills_by_option_labels">
+        <item>Due date</item>
+        <item>Amount up</item>
+        <item>Amount down</item>
+    </array>
+
+    <array name="pref_sort_recurring_bills_by_options_values">
+        <item>due date</item>
+        <item>amount up</item>
+        <item>amount down</item>
+    </array>
+</resources>

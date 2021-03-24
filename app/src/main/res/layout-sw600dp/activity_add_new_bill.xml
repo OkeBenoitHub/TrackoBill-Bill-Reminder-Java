@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bill_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".activities.RecurringBillActivity">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <!-- Bill name -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/bill_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="none"
+                    android:background="#f5f5f5"
+                    android:fontFamily="@font/lato_medium"
+                    android:hint="@string/bill_s_name"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/edit_text_color" />
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/bill_action_box"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp">
+
+                <ImageButton
+                    android:id="@+id/check_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/no_content_description"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:onClick="markRecurringAsPaid"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_check_circle_white_36dp"
+                    android:tint="@color/colorPrimaryDark" />
+
+                <ImageButton
+                    android:id="@+id/check_on_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/no_content_description"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:onClick="putRecurringBillOnHold"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_pending_actions_white_36dp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageButton
+                    android:id="@+id/undo_on_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:contentDescription="@string/no_content_description"
+                    android:focusable="true"
+                    android:onClick="undoRecurringBillOnHold"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_undo_white_36dp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@id/amount_et"
+                android:layout_toLeftOf="@id/amount_et"
+                android:fontFamily="@font/robotomedium"
+                android:text="@string/amount_text"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/darker_gray" />
+
+            <!-- Bill amount -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/amount_et"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/bill_amount_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="none"
+                    android:background="#f5f5f5"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/_0_00_text"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <!-- pick bill date button -->
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_round_colored"
+            app:mrl_rippleColor="@color/colorPrimaryDark"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleRoundedCorners="20dp">
+
+            <Button
+                android:id="@+id/pick_bill_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="specifyBillDueDate"
+                android:text="@string/specify_due_date_button"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:id="@+id/bill_due_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/when_is_this_bill_due"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/about_content_color" />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+</ScrollView>

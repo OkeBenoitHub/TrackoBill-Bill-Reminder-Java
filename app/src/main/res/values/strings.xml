@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">TrackoBill App</string>
+    <string name="app_name_label">TrackoBill</string>
+    <string name="package_name_text">com.trackobill.www</string>
+    <string name="wifi_enabled_text">Wifi enabled</string>
+    <string name="mobile_data_enabled_text">Mobile data enabled</string>
+    <string name="No_internet_available_text">No internet connection</string>
+    <string name="smart_bill_reminder_app">Smart bill reminder App</string>
+    <string name="no_content_description" translatable="false">no_description</string>
+    <string name="trackobill_helps_you_head_text">TrackoBill helps you:</string>
+    <string name="about_app_head_1">Manage your recurring bills and expenses so you can control your spending better.</string>
+    <string name="about_app_head_2">Get reminders to pay your bills on time and avoid paying late fees again.</string>
+    <string name="about_app_head_3">Track your recurring bills and organize them by importance.</string>
+    <string name="view_my_bills_button_text">View my bills</string>
+    <string name="share_app_menu_text">Share App</string>
+
+    <string name="important_bills_activity_name">Important bills</string>
+    <string name="share_app_about_title">Share TrackoBill with:</string>
+    <string name="share_app_message_1">TrackoBill helps you manage your recurring bills and expenses so you can control your spending better. Find out about smart budgeting and bill organizing.</string>
+    <string name="share_app_message_2">Click the link below to download the android app:</string>
+    <string name="app_play_store_link" translatable="false">https://google.store.link</string>
+    <string name="no_bills_found_text">No bills found!\nTap + to add a new bill.</string>
+    <string name="bill_text">Recurring bill</string>
+    <string name="add_a_new_recurring_bill">New recurring bill</string>
+    <string name="bill_s_name">Name of the bill</string>
+    <string name="amount_edit_text">Amount ($)</string>
+    <string name="add_bill_button">Add bill</string>
+    <string name="specify_due_date_button">+ Specify date</string>
+    <string name="bill_due_date_text">Bill due date:</string>
+    <string name="when_is_this_bill_due">When is the bill due?</string>
+    <string name="specify_due_date_text">Specify a bill due date</string>
+    <string name="set_bill_amount_text">Set an amount</string>
+    <string name="set_bill_valid_amount_text">Set a valid amount</string>
+    <string name="enter_bill_name_text">Enter a name</string>
+    <string name="add_a_new_bill_menu_text">Add a new bill</string>
+    <string name="action_settings">Settings</string>
+    <string name="feedback_menu_text">Feedback</string>
+    <string name="report_an_issue_menu_text">Report an issue</string>
+    <string name="bills_paid_menu_text">bills paid</string>
+    <string name="important_bills_menu_text">important bills</string>
+    <string name="add_new_bill_activity_name">Add a new bill</string>
+    <string name="view_bills_activity_name">My bills</string>
+    <string name="paid_bills_activity_name">Paid bills</string>
+    <string name="settings_activity_name">Settings</string>
+    <string name="bills_on_hold_menu_text">Bills on hold</string>
+    <string name="bills_on_hold_activity_name">Bills on hold</string>
+
+    <string name="give_us_feedback_text">Give us a feedback</string>
+    <string name="what_went_wrong_text">Tell us what went wrong!!</string>
+    <string name="_0_00_text" translatable="false">$0.00</string>
+    <string name="amount_text">Amount:</string>
+    <string name="bill_due_on_text">Bill due on:</string>
+    <string name="bill_date_future_error_text">The bill due date should be a future date.</string>
+    <string name="empty_bill_due_date_error_text">When is this bill due?</string>
+    <string name="invalid_bill_amount_error_text">Enter a valid amount</string>
+    <string name="empty_bill_amount_error_text">Enter an amount</string>
+    <string name="empty_bill_name_error_text">Enter a name</string>
+    <string name="create_new_db_instance" translatable="false">Creating new database instance</string>
+    <string name="getting_db_instance" translatable="false">Getting the database instance</string>
+    <string name="new_bill_added_successfully_text">New bill added successfully!</string>
+    <string name="no_bills_found_tv">No bills found\nTap + to add a new bill.</string>
+    <string name="recurring_bill_updated">Recurring bill updated</string>
+    <string name="failed_update_bill">Failed to update bill</string>
+    <string name="delete_bill_title_box">Delete Bill</string>
+    <string name="are_u_sure_delete_bill">Are you sure to delete this bill?</string>
+    <string name="yes_button_text">Yes</string>
+    <string name="no_button_text">No</string>
+    <string name="recurring_bill_deleted">Recurring bill deleted</string>
+    <string name="next_bill_text">Next bill:</string>
+    <string name="on_hold_text">On hold</string>
+    <string name="paid_text">Paid</string>
+    <string name="no_paid_bills_found_text">No paid bills found</string>
+    <string name="recurring_bill_as_paid">Recurring bill marked as paid</string>
+    <string name="recurring_bill_as_hold">Recurring bill put on hold</string>
+    <string name="no_bills_on_hold_text">No bills on hold</string>
+    <string name="paid_bill_title_dialog_text">Paid bill</string>
+    <string name="mark_bill_as_paid_text">Mark this bill as paid?</string>
+    <string name="next_month_bill_due_date">The bill will be due 30 days from the next bill date.</string>
+    <string name="mark_bill_on_hold_title_text">Put this bill on hold?</string>
+    <string name="not_notified_bill_on_hold_text">You will not be notified to pay this bill on time.</string>
+    <string name="undo_bill_marked_hold">Undo bill put on hold</string>
+    <string name="search_for_a_bill_edit_text">Search for a bill</string>
+    <string name="search_bill_button_text">Search</string>
+    <string name="cancel_bill_button_text">Cancel</string>
+    <string name="no_search_bills_found_tv">No results found.</string>
+    <string name="find_bill_by_name_text">Find a bill by name.</string>
+    <string name="main_notification_channel_name">Primary</string>
+    <string name="bill_due_date_reminder_notification_title">Upcoming bill</string>
+    <string name="bill_due_date_reminder_notification_body">You have a new bill coming up</string>
+    <string name="break_line"><br>\n</br></string>
+    <string name="due_on_text">Due on:</string>
+    <string name="mark_as_paid_button_notification">Mark as paid</string>
+    <string name="put_on_hold_button_notification">Put on hold</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="upcoming_bill_text_widget">No Upcoming bill</string>
+    <string name="due_date_holder_text">Due date: -//-</string>
+    <string name="bill_name_widget_holder">Bill name: -//-</string>
+    <string name="amount_text_widget_holder">Amount: -//-</string>
+    <string name="upcoming_bill_widget_text">Upcoming Bill</string>
+    <string name="pref_hide_bills_on_hold_from_main_bills_key" translatable="false">pref_hide_bills_on_hold_from_main_bills_key</string>
+    <string name="pref_notify_prior_bill_due_date_key">pref_notify_prior_bill_due_date_key</string>
+    <string name="pref_notify_prior_bill_due_date_24h">24h</string>
+    <string name="pref_sort_recurring_bills_by_key">pref_sort_recurring_bills_by_key</string>
+    <string name="pref_sort_recurring_bills_by_due_date">due date</string>
+    <string name="add_widget_home_screen">Add bill to home screen?</string>
+    <string name="add_home_screen_widget_message">The next upcoming bill will be added to the home screen until removed.</string>
+    <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="give_us_feedback_text_by">Give us a feedback by</string>
+    <string name="report_an_issue_by">Report an issue by</string>
+</resources>

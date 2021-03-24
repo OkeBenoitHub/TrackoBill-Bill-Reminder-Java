@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="pref_default_hide_bills_on_hold_from_main_bills">false</bool>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.RecurringBillActivity">
+
+    <item
+        android:id="@+id/delete_recurring_bill"
+        android:icon="@drawable/delete_forever_white_36dp"
+        android:title="@string/bills_paid_menu_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/save_recurring_bill"
+        android:icon="@drawable/baseline_add_task_white_36dp"
+        android:title="@string/bills_paid_menu_text"
+        app:showAsAction="always" />
+
+</menu>
